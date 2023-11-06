@@ -7,6 +7,17 @@ export const LayoutHeaderStyled = styled.header`
 
   .logo {
     margin-right: 24px;
+
+    @media ${constantsStyled.m480} {
+      display: flex;
+      justify-content: space-between;
+      margin-right: unset;
+    }
+
+    img {
+      width: 170px;
+      height: 25px;
+    }
   }
 
   .search {
@@ -38,6 +49,10 @@ export const LayoutHeaderStyled = styled.header`
 
         @media ${constantsStyled.m1440} {
           width: calc(100% - 122px);
+        }
+
+        @media ${constantsStyled.m480} {
+          width: 100%;
         }
 
         height: 40px;

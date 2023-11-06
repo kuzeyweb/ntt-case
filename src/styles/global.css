@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 :root {
   --primary: rgba(0, 89, 188, 1);
@@ -7,9 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
   }
-
 
   .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
     margin-top: 12px;
@@ -25,4 +24,88 @@ body {
   
   .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
     background-color: var(--primary) !important;
+  }
+
+  .ant-menu-submenu-placement-bottomLeft {
+      padding-top: 0;
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 0;
+    }
+    
+  .ant-menu-submenu-placement-bottomLeft > ul {
+    background-position: right;
+    display: flex;
+    width: 100%;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-color: rgba(244, 245, 246, 1) !important;
+  }
+
+  .ant-menu-submenu-placement-bottomLeft > ul li {
+    line-height: 16px !important;
+    height: fit-content !important;
+    margin-bottom: 12px !important;
+    margin-top: 0px !important;
+    padding-left: 24px !important;
+    color: black !important;
+  }
+
+  .ant-menu-submenu-placement-bottomRight > ul {
+    background-color: rgba(244, 245, 246, 1) !important;
+    min-width: unset !important;
+  }
+
+  .ant-menu-submenu-placement-bottomRight > ul li {
+    text-align: center;
+    width: max-content !important;
+  }
+
+  .ant-menu-item-group-title {
+    font-weight: 500;
+    padding-left: 28px !important;
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 12px !important;
+    line-height: unset !important;
+  }
+
+  .menu-dropdown-image {
+    margin-left: 70px;
+  }
+
+  .ant-menu-submenu-placement-bottomRight .ant-menu-item {
+    font-weight: 500;
+  }
+
+  .ant-menu-item {
+    color: rgba(106, 109, 112, 1);
+  }
+
+  .dd-image-container {
+    height: 240px;
+  }
+  
+  @media (max-width: 1440px) {
+    .menu-dropdown-image {
+      margin-left: 0px;
+      max-width: 100%;
+      object-fit: cover;
+      height: 240px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .menu-dropdown-image {
+
+    display: none;
+    }
+  }
+
+  .menu-item {
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 24px;
   }
