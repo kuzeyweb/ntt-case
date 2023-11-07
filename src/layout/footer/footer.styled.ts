@@ -67,12 +67,11 @@ export const FooterStyled = styled.footer`
     
             input {
               height: 38px;
-              width: 407px;
+              width: 286px;
               padding: 0 10px;
 
               @media ${constantsStyled.m480} {
                 width: 200px;
-
               }
 
               &::placeholder {
@@ -86,6 +85,7 @@ export const FooterStyled = styled.footer`
     button {
         border-radius: 0 !important;
         height: 38px;
+        width: 101px;
       text-transform: none;
       font-weight: 400;
       background-color: ${constantsStyled.primaryDark};

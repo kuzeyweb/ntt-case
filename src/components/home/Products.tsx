@@ -110,7 +110,6 @@ const Products = () => {
           Ürün bulunamadı.
         </Title>
       )}
-
       {filteredData && filteredData?.length > 4 && (
         <div className="expand">
           <Button onClick={() => setExpand((current) => !current)}>
