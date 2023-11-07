@@ -105,11 +105,12 @@ const Products = () => {
             })}
         {isLoading && [0, 1, 2].map(() => <CardSkeleton key={uuid()} />)}
       </ProductCardStyled>
-      {(!filteredData || (filteredData?.length < 1 && !isLoading)) && (
+      {!isLoading && (!filteredData || filteredData.length < 1) && (
         <Title style={{ textAlign: "center", marginTop: "60px" }} level={3}>
           Ürün bulunamadı.
         </Title>
       )}
+
       {filteredData && filteredData?.length > 4 && (
         <div className="expand">
           <Button onClick={() => setExpand((current) => !current)}>
